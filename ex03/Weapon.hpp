@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fdurban- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/04 17:12:15 by fdurban-          #+#    #+#             */
-/*   Updated: 2025/11/05 13:38:09 by fdurban-         ###   ########.fr       */
+/*   Created: 2025/11/05 15:22:39 by fdurban-          #+#    #+#             */
+/*   Updated: 2025/11/05 15:43:40 by fdurban-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
-
-Zombie::Zombie()
-{}
-void    Zombie::announce(void)
+class	Weapon
 {
-        std::cout<<name<<" : BraiiiiiiinnnzzzZ..."<<std::endl;
-}
-
-Zombie::~Zombie()
-{
-}
-
-void	Zombie::setName(std::string newName)
-{
-	name = newName;
-}
+	private:
+		std::string	type;
+	public:
+		Weapon();
+		Weapon(std::string name);
+		~Weapon();
+		const std::string	&getType();
+		void		setType();
+};

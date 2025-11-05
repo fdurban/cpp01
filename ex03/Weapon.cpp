@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fdurban- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/04 17:12:15 by fdurban-          #+#    #+#             */
-/*   Updated: 2025/11/05 13:38:09 by fdurban-         ###   ########.fr       */
+/*   Created: 2025/11/05 15:22:17 by fdurban-          #+#    #+#             */
+/*   Updated: 2025/11/05 15:43:37 by fdurban-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Weapon.hpp"
 
-Zombie::Zombie()
-{}
-void    Zombie::announce(void)
+Weapon::Weapon();
+Weapon::Weapom(std::string newType);
+Weapon::~Weapon();
+const std::string	&Weapon::getType()
 {
-        std::cout<<name<<" : BraiiiiiiinnnzzzZ..."<<std::endl;
+	return (type);
 }
 
-Zombie::~Zombie()
+void	Weapon::setType(std::string newType)
 {
-}
-
-void	Zombie::setName(std::string newName)
-{
-	name = newName;
+	type = newType;
 }
