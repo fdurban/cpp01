@@ -6,16 +6,18 @@
 /*   By: fdurban- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 15:22:17 by fdurban-          #+#    #+#             */
-/*   Updated: 2025/11/05 15:43:37 by fdurban-         ###   ########.fr       */
+/*   Updated: 2025/11/06 15:32:04 by fdurban-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-Weapon::Weapon();
-Weapon::Weapom(std::string newType);
-Weapon::~Weapon();
-const std::string	&Weapon::getType()
+Weapon::Weapon(){}
+Weapon::Weapon(std::string newType):
+type(newType)
+{}
+Weapon::~Weapon(){}
+const std::string	Weapon::getType()
 {
 	return (type);
 }

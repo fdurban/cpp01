@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fdurban- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/05 15:22:39 by fdurban-          #+#    #+#             */
-/*   Updated: 2025/11/06 14:21:50 by fdurban-         ###   ########.fr       */
+/*   Created: 2025/11/06 16:01:58 by fdurban-          #+#    #+#             */
+/*   Updated: 2025/11/06 16:41:42 by fdurban-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef WEAPON_HPP
-#define WEAPON_HPP
 #include <iostream>
 
-
-class	Weapon
+int	main(int argc, char **argv)
 {
-	private:
-		std::string	type;
-	public:
-		Weapon();
-		Weapon(std::string name);
-		~Weapon();
-		const std::string	getType();
-		void		setType(std::string newType);
-};
-#endif
+	if(argc != 4)
+	{
+		std::cout<<"Not the right number of arguments"<<std::endl;
+	}
+
+}
